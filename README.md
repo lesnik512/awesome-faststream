@@ -32,7 +32,7 @@
 ## Dependency Injection
 
 - [dishka-faststream](https://github.com/faststream-community/dishka-faststream) - Dishka dependency-injection integration for FastStream.
-- [modern-di-faststream](https://github.com/modern-python/modern-di-faststream) - Modern-DI dependency-injection integration for FastStream.
+- [modern-di](https://github.com/modern-python/modern-di) - Dependency injection framework with IoC container and scopes, with a [FastStream integration](https://github.com/modern-python/modern-di-faststream).
 
 ## Patterns and Reliability
 
