@@ -2,9 +2,11 @@
 
 # Awesome FastStream [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of awesome libraries, tools, templates, and resources for [FastStream](https://github.com/ag2ai/faststream).
+> Asynchronous Python framework for building event-driven services across Kafka, RabbitMQ, NATS, and Redis.
 
-[FastStream](https://github.com/ag2ai/faststream) is an asynchronous Python framework for building event-driven services. It unifies message-broker integration (Kafka, RabbitMQ, NATS, Redis), dependency injection, validation, testing, and AsyncAPI documentation in a single toolkit.
+<a href="https://faststream.ag2.ai"><img align="right" width="120" alt="FastStream" src="https://raw.githubusercontent.com/ag2ai/faststream/main/docs/docs/assets/img/logo.svg"></a>
+
+[FastStream](https://github.com/ag2ai/faststream) gives you one API for several message brokers, plus typed messages, dependency injection, testing helpers, and generated AsyncAPI docs. The libraries, integrations, and templates below build on top of it.
 
 ## Contents
 
@@ -13,47 +15,44 @@
 - [Dependency Injection](#dependency-injection)
 - [Patterns and Reliability](#patterns-and-reliability)
 - [Observability](#observability)
-- [Templates and Examples](#templates-and-examples)
+- [Templates](#templates)
 - [Community](#community)
 
 ## Official Resources
 
-- [FastStream](https://github.com/ag2ai/faststream) - Core asynchronous framework for building event-driven services across Kafka, RabbitMQ, NATS, and Redis.
-- [Documentation](https://faststream.ag2.ai) - Official documentation, tutorials, and API reference.
-- [faststream-gen](https://github.com/airtai/faststream-gen) - Generate FastStream applications from a natural-language description using AI.
-- [FastStream Community](https://github.com/faststream-community) - Community organization hosting plugins, bridges, and templates.
+- [FastStream](https://github.com/ag2ai/faststream) - The core framework, with one consistent API over Kafka, RabbitMQ, NATS, and Redis.
+- [Documentation](https://faststream.ag2.ai) - Guides, tutorials, and the full API reference.
+- [faststream-gen](https://github.com/airtai/faststream-gen) - Scaffolds a working FastStream app from a plain-English description.
+- [FastStream Community](https://github.com/faststream-community) - Organization that collects community plugins, framework bridges, and templates.
 
 ## Brokers and Transports
 
-- [faststream-sqlbroker](https://github.com/faststream-community/faststream-sqlbroker) - SQL-database-backed broker implementation for FastStream.
-- [stompman](https://github.com/community-of-python/stompman) - Python STOMP 1.2 client and FastStream broker for STOMP-based messaging.
-- [zMQTT](https://github.com/faststream-community/zMQTT) - Pure-asyncio MQTT 3.1.1 and 5.0 client, with no paho dependency, that brings MQTT support to FastStream.
+- [stompman](https://github.com/community-of-python/stompman) - STOMP 1.2 client that also works as a FastStream broker.
+- [zMQTT](https://github.com/faststream-community/zMQTT) - Adds MQTT 3.1.1 and 5.0 support through a dependency-free, pure-asyncio client.
 
 ## Dependency Injection
 
-- [dishka-faststream](https://github.com/faststream-community/dishka-faststream) - Dishka dependency-injection integration for FastStream.
-- [modern-di](https://github.com/modern-python/modern-di) - Dependency injection framework with IoC container and scopes, with a [FastStream integration](https://github.com/modern-python/modern-di-faststream).
+- [dishka-faststream](https://github.com/faststream-community/dishka-faststream) - Wires the Dishka container into FastStream handlers.
+- [modern-di](https://github.com/modern-python/modern-di) - DI framework with an IoC container and scopes; its [FastStream integration](https://github.com/modern-python/modern-di-faststream) plugs it into handlers.
 
 ## Patterns and Reliability
 
-- [faststream-outbox](https://github.com/modern-python/faststream-outbox) - Transactional-outbox integration backed by a PostgreSQL table.
-- [faststream-redis-timers](https://github.com/modern-python/faststream-redis-timers) - Redis-backed distributed timer scheduling for FastStream.
-- [faststream-concurrent-aiokafka](https://github.com/modern-python/faststream-concurrent-aiokafka) - Concurrent message-processing middleware for FastStream with aiokafka.
+- [faststream-outbox](https://github.com/modern-python/faststream-outbox) - Transactional outbox that uses a PostgreSQL table as the queue, so messages publish only after the surrounding transaction commits.
+- [faststream-redis-timers](https://github.com/modern-python/faststream-redis-timers) - Schedules delayed and recurring messages with Redis-backed distributed timers.
+- [faststream-concurrent-aiokafka](https://github.com/modern-python/faststream-concurrent-aiokafka) - Processes Kafka messages concurrently within a partition via aiokafka middleware.
 
 ## Observability
 
-- [faststream-monitoring](https://github.com/faststream-community/faststream-monitoring) - Example monitoring setup for FastStream services.
-- [lite-bootstrap](https://github.com/modern-python/lite-bootstrap) - Bootstrap production-ready microservices with FastStream, OpenTelemetry, Prometheus, and Sentry wired in.
+- [lite-bootstrap](https://github.com/modern-python/lite-bootstrap) - Wires OpenTelemetry, Prometheus, Sentry, and health checks into FastStream and web services with little setup.
 
-## Templates and Examples
+## Templates
 
-- [fastapi-dishka-faststream](https://github.com/faststream-community/fastapi-dishka-faststream) - Starter template combining FastAPI, dishka, FastStream, SQLAlchemy, and Pydantic.
-- [nats-faststream-frontend-demo](https://github.com/faststream-community/nats-faststream-frontend-demo) - Demo connecting a NATS-backed FastStream service to a web frontend.
+- [fastapi-dishka-faststream](https://github.com/faststream-community/fastapi-dishka-faststream) - Starter project pairing FastAPI and FastStream with Dishka, SQLAlchemy, and Pydantic.
 
 ## Community
 
-- [Discord](https://discord.gg/qFm6aSqq59) - English-speaking FastStream community chat.
-- [Telegram](https://t.me/python_faststream) - Russian-speaking FastStream community chat.
+- [Discord](https://discord.gg/qFm6aSqq59) - Chat with the FastStream community in English.
+- [Telegram](https://t.me/python_faststream) - Russian-speaking FastStream chat.
 
 ## Contributing
 
