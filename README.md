@@ -27,11 +27,13 @@
 ## Brokers and Transports
 
 - [faststream-mq](https://github.com/davzucky/faststream-mq) - Standalone IBM MQ broker adapter for FastStream.
+- [kubemq-faststream](https://github.com/kubemq-io/kubemq-faststream) - KubeMQ broker adapter for FastStream.
 - [stompman](https://github.com/community-of-python/stompman) - STOMP 1.2 client that also works as a FastStream broker.
 
 ## Dependency Injection
 
 - [dishka-faststream](https://github.com/faststream-community/dishka-faststream) - Wires the Dishka container into FastStream handlers.
+- [FastDepends](https://github.com/Lancetnik/FastDepends) - Lightweight dependency-injection system, by FastStream's author, that powers FastStream's own dependency injection.
 - [modern-di](https://github.com/modern-python/modern-di) - DI framework with an IoC container and scopes; its [FastStream integration](https://github.com/modern-python/modern-di-faststream) plugs it into handlers.
 
 ## Patterns and Reliability
@@ -39,12 +41,14 @@
 - [faststream-outbox](https://github.com/modern-python/faststream-outbox) - Transactional outbox that uses a PostgreSQL table as the queue, so messages publish only after the surrounding transaction commits.
 - [faststream-redis-timers](https://github.com/modern-python/faststream-redis-timers) - Schedules delayed and recurring messages with Redis-backed distributed timers.
 - [faststream-concurrent-aiokafka](https://github.com/modern-python/faststream-concurrent-aiokafka) - Processes Kafka messages concurrently within a partition via aiokafka middleware.
+- [python-cqrs](https://github.com/pypatterns/python-cqrs) - CQRS and event-driven framework that uses FastStream brokers to publish and consume domain events.
 - [taskiq-faststream](https://github.com/taskiq-python/taskiq-faststream) - Adds Taskiq task scheduling to FastStream, for cron and delayed message publishing.
 
 ## Observability
 
 - [faststream-monitoring](https://github.com/faststream-community/faststream-monitoring) - Example OpenTelemetry and Prometheus monitoring setup for FastStream.
 - [lite-bootstrap](https://github.com/modern-python/lite-bootstrap) - Wires OpenTelemetry, Prometheus, Sentry, and health checks into FastStream and web services with little setup.
+- [microbootstrap](https://github.com/community-of-python/microbootstrap) - Bootstraps microservices with Sentry, Prometheus, and OpenTelemetry preconfigured, including for FastStream services.
 
 ## Templates
 
