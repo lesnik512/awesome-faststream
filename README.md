@@ -22,13 +22,12 @@
 
 - [FastStream](https://github.com/ag2ai/faststream) - The core framework, with one consistent API over Kafka, RabbitMQ, NATS, and Redis.
 - [Documentation](https://faststream.ag2.ai) - Guides, tutorials, and the full API reference.
-- [faststream-gen](https://github.com/airtai/faststream-gen) - Scaffolds a working FastStream app from a plain-English description.
 - [FastStream Community](https://github.com/faststream-community) - Organization that collects community plugins, framework bridges, and templates.
 
 ## Brokers and Transports
 
+- [faststream-mq](https://github.com/davzucky/faststream-mq) - Standalone IBM MQ broker adapter for FastStream.
 - [stompman](https://github.com/community-of-python/stompman) - STOMP 1.2 client that also works as a FastStream broker.
-- [zMQTT](https://github.com/faststream-community/zMQTT) - Adds MQTT 3.1.1 and 5.0 support through a dependency-free, pure-asyncio client.
 
 ## Dependency Injection
 
@@ -40,9 +39,11 @@
 - [faststream-outbox](https://github.com/modern-python/faststream-outbox) - Transactional outbox that uses a PostgreSQL table as the queue, so messages publish only after the surrounding transaction commits.
 - [faststream-redis-timers](https://github.com/modern-python/faststream-redis-timers) - Schedules delayed and recurring messages with Redis-backed distributed timers.
 - [faststream-concurrent-aiokafka](https://github.com/modern-python/faststream-concurrent-aiokafka) - Processes Kafka messages concurrently within a partition via aiokafka middleware.
+- [taskiq-faststream](https://github.com/taskiq-python/taskiq-faststream) - Adds Taskiq task scheduling to FastStream, for cron and delayed message publishing.
 
 ## Observability
 
+- [faststream-monitoring](https://github.com/faststream-community/faststream-monitoring) - Example OpenTelemetry and Prometheus monitoring setup for FastStream.
 - [lite-bootstrap](https://github.com/modern-python/lite-bootstrap) - Wires OpenTelemetry, Prometheus, Sentry, and health checks into FastStream and web services with little setup.
 
 ## Templates
