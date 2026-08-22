@@ -32,7 +32,7 @@ FastStream gives you one API for several message brokers, plus typed messages, d
 
 - [dishka-faststream](https://github.com/faststream-community/dishka-faststream) - Wires the Dishka container into FastStream handlers.
 - [FastDepends](https://github.com/Lancetnik/FastDepends) - Lightweight dependency-injection system, by FastStream's author, that powers FastStream's own dependency injection.
-- [modern-di](https://github.com/modern-python/modern-di) - DI framework with an IoC container and scopes; its [FastStream integration](https://github.com/modern-python/modern-di-faststream) plugs it into handlers.
+- [modern-di-faststream](https://github.com/modern-python/modern-di-faststream) - Integrates the modern-di IoC container into FastStream handlers, building a per-message child container.
 
 ## Patterns and Reliability
 
@@ -63,4 +63,4 @@ Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTIN
 
 ## Footnotes
 
-Curator disclosure: I maintain the [modern-python](https://github.com/modern-python) entries in this list - modern-di, modern-di-faststream, faststream-outbox, faststream-redis-timers, faststream-concurrent-aiokafka, and lite-bootstrap. I also contribute to microbootstrap and stompman, which are maintained by others.
+Curator disclosure: I maintain the [modern-python](https://github.com/modern-python) entries in this list - modern-di-faststream, faststream-outbox, faststream-redis-timers, faststream-concurrent-aiokafka, and lite-bootstrap. I also contribute to microbootstrap and stompman, which are maintained by others.
