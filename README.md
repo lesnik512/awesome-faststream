@@ -27,6 +27,8 @@ FastStream gives you one API for several message brokers, plus typed messages, d
 - [faststream-mq](https://github.com/davzucky/faststream-mq) - Standalone IBM MQ broker adapter for FastStream.
 - [kubemq-faststream](https://github.com/kubemq-io/kubemq-faststream) - KubeMQ broker adapter for FastStream.
 - [stompman](https://github.com/community-of-python/stompman) - STOMP 1.2 client that also works as a FastStream broker.
+- [faststream-sqlbroker](https://github.com/faststream-community/faststream-sqlbroker)] - SQLAlchemy broker adapter for FastStream.
+- [faststream-celery](https://github.com/C3EQUALZz/faststream-celery) - Celery broker adapter for FastStream.
 
 ## Dependency Injection
 
