@@ -17,6 +17,6 @@ Contributions are welcome. Thank you for helping make this list better.
 
 1. Fork this repository.
 2. Add your entry following the guidelines above.
-3. Open a pull request with a short, clear title (for example, `Add modern-di-faststream`).
+3. Open a pull request with a short, clear title (for example, `Add zMQTT`).
 
 Entries that don't fit, are unmaintained, or are duplicates may be declined. Thanks for contributing!
