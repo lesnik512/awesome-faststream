@@ -24,7 +24,9 @@ FastStream gives you one API for several message brokers, plus typed messages, d
 
 ## Brokers and Transports
 
+- [faststream-celery](https://github.com/C3EQUALZz/faststream-celery) - FastStream broker that speaks the Celery protocol, so handlers interoperate with existing Celery producers and workers.
 - [faststream-mq](https://github.com/davzucky/faststream-mq) - Standalone IBM MQ broker adapter for FastStream.
+- [faststream-sqlbroker](https://github.com/faststream-community/faststream-sqlbroker) - Broker that uses a SQL database as the message transport, via SQLAlchemy.
 - [kubemq-faststream](https://github.com/kubemq-io/kubemq-faststream) - KubeMQ broker adapter for FastStream.
 - [stompman](https://github.com/community-of-python/stompman) - STOMP 1.2 client that also works as a FastStream broker.
 - [zMQTT](https://github.com/faststream-community/zMQTT) - Pure asyncio MQTT 3.1.1 and 5.0 client that FastStream's MQTT broker is built on.
